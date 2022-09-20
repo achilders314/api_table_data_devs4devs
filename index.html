@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Star Wars API Table</title>
+    <link rel="icon" type="image/x-icon" href="r2d2favicon.png">
+</head>
+<body style="font-size: 1.5rem;">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a id="data-table-button" class="nav-link active" aria-current="page" href="#">Data Table</a>
+      </li>
+      <li class="nav-item">
+        <a id="character-lookup-button" class="nav-link" href="#">Character Lookup</a>
+      </li>
+      
+    </ul>
+    <section id="controls">
+        <form id="sorting-options" class="mx-auto my-2 w-75">
+            <div class="mx-auto text-center my-5">
+            <label for="category">Category:</label>
+            <select id="category" name="category" aria-describedby="sort-category-dropdown">
+                <option value="first">First Name</option>
+                <option selected value="last">Last Name</option>
+                <option value="homeworld">Home World</option>
+                <option value="species">Species</option>
+            </select>
+            <button type="button" id="sort-data">Sort Data</button>
+        </div>
+        </form>
+    </section>
+    <section id="data-table">
+        <table id="sorted-table" class="table table-hover w-75 mx-auto my-1">
+            <thead>
+              <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Planet</th>
+                <th scope="col">Species</th>
+                <th scope="col">Wiki</th>
+                <th scope="col">Image</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!-- Star Wars Data Goes Here -->
+            </tbody>
+          </table>
+    </section>
+    <section hidden id="character-lookup" class="w-75 mx-auto my-5">
+      <h2 id="character-name" class="text-center"></h2>
+      <div class="d-flex justify-content-center">
+        <div id="character-pic" class="mx-2 text-center" style="width: 40%;">
+          <!-- character pic goes here -->
+        </div>
+        <div id="details" class="mx-2" style="width: 40%">
+          <p id="homeworld"></p>
+          <p id="species"></p>
+          <p id="wiki"></p>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

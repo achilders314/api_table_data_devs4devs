@@ -1,0 +1,8 @@
+table {
+    width: 60%;
+    margin: 20px auto;
+}
+
+tr {
+    cursor: pointer;
+}
