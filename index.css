@@ -6,3 +6,30 @@ table {
 tr {
     cursor: pointer;
 }
+
+#details, #character-pic {
+    width: 40%;
+}
+
+form{
+    width: 75%;
+}
+
+body{
+    font-size: 1.2rem;;
+}
+
+@media screen and (max-width: 800px){
+.d-flex{
+    flex-wrap: wrap !important;
+}
+
+#details, #character-pic {
+    width: 100% !important;
+}
+
+form{
+    width: 90%;
+}
+
+}

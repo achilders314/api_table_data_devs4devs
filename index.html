@@ -8,7 +8,7 @@
     <title>Star Wars API Table</title>
     <link rel="icon" type="image/x-icon" href="r2d2favicon.png">
 </head>
-<body style="font-size: 1.2rem;">
+<body>
     <ul class="nav nav-tabs">
       <li class="nav-item">
         <a id="data-table-button" class="nav-link active" aria-current="page" href="#">Data Table</a>
@@ -19,7 +19,7 @@
       
     </ul>
     <section id="controls">
-        <form id="sorting-options" class="mx-auto my-2 w-75">
+        <form id="sorting-options" class="mx-auto my-2">
             <div class="mx-auto text-center my-5">
             <label for="category">Category:</label>
             <select id="category" name="category" aria-describedby="sort-category-dropdown">
@@ -52,10 +52,10 @@
     <section hidden id="character-lookup" class="w-75 mx-auto my-5">
       <h2 id="character-name" class="text-center"></h2>
       <div class="d-flex justify-content-center">
-        <div id="character-pic" class="mx-2 text-center" style="width: 40%;">
+        <div id="character-pic" class="mx-2 text-center">
           <!-- character pic goes here -->
         </div>
-        <div id="details" class="mx-2" style="width: 40%">
+        <div id="details" class="mx-2">
           <p id="homeworld"></p>
           <p id="species"></p>
           <p id="wiki"></p>
